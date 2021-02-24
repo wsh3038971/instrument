@@ -6,7 +6,10 @@
         left-arrow
         @click-left="onClickLeft"
         />
-        <aplayer autoplay v-for="(item, index) in musicList" :key="index" :music="item" />
+        <aplayer theme="pic" :float="float" :mini="mini" :list="musicList" :autoplay="autoplay" :music="musicList[0]" />
+        <div>
+            <a href="https://github.com/SevenOutman/vue-aplayer/blob/develop/docs/README.zh-CN.md">文档</a>
+        </div>
     </div>
 </template>
 
@@ -15,10 +18,13 @@ import Aplayer from 'vue-aplayer'
 export default {
     data() {
         return {
+            mini: false, // 迷你模式
+            autoplay: false, // 自动播放
+            float: true, // 浮动模式
             musicList: [
                 {
                     title: '听见下雨的声音',
-                    artist: 'Silent Siren',
+                    artist: '周杰伦',
                     src: require('../../assets/music/听见下雨的声音.mp3'),
                     pic: 'https://moeplayer.b0.upaiyun.com/aplayer/secretbase.jpg'
                 },

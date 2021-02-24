@@ -106,6 +106,11 @@ Vue.use(VueRouter)
     path: '/musicPlayer',
     name: 'musicPlayer',
     component: () => import('../views/musicPlayer/musicPlayer.vue')
+  },
+  {
+    path: '/animate',
+    name: 'animate',
+    component: () => import('../views/animate/animate.vue')
   }
 ]
 

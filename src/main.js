@@ -6,6 +6,8 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
+import './assets/css/animate.min.css';
+
 // import preview from "vue-photo-preview";
 // import "vue-photo-preview/dist/skin.css";
 // import _ from 'lodash'
