@@ -14,6 +14,7 @@
       <van-button size="small" color="blue" round @click="goVideo">屏幕录制</van-button>
       <van-button size="small" color="yellow" round @click="textRoll">文本滚动</van-button>
       <van-button size="small" color="#008B8B" round @click="goSwipe">轮播图</van-button>
+      <van-button size="small" color="#008B8B" round @click="goMusicPlayer">音乐播放器</van-button>
       <button @click="countPlus">加1</button>
       <p>{{count}}</p>
     </van-row>
@@ -78,6 +79,9 @@ export default {
     countPlus() {
       // let that = this
       this.fnThrottle(this.countPlus1, 500, 500)();
+    },
+    goMusicPlayer() {
+      this.$router.push('/musicPlayer')
     },
     goSwipe() {
       this.$router.push('/swipe')

@@ -101,6 +101,11 @@ Vue.use(VueRouter)
     path: '/swipe',
     name: 'swipe',
     component: () => import('../views/swipe/swipe.vue')
+  },
+  {
+    path: '/musicPlayer',
+    name: 'musicPlayer',
+    component: () => import('../views/musicPlayer/musicPlayer.vue')
   }
 ]
 
