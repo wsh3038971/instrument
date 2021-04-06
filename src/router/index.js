@@ -111,6 +111,11 @@ Vue.use(VueRouter)
     path: '/animate',
     name: 'animate',
     component: () => import('../views/animate/animate.vue')
+  },
+  {
+    path: '/nextTick',
+    name: 'nextTick',
+    component: () => import('../views/nextTick/nextTick.vue')
   }
 ]
 
